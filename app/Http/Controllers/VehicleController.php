@@ -72,8 +72,7 @@ class VehicleController extends Controller
 
     //    update vehicle id
     public function updateVehicle(Request $request,$id){
-        $validated = $request->validate([
-            'user_id'=>'required|integer' ,
+        $validated = $request->validate([ 
             'brand'=>'required|string' ,
             'type'=>'required|string' ,
             'model'=>'required|string' ,
@@ -84,7 +83,6 @@ class VehicleController extends Controller
 
         try{
             $existingVehicle= Vehicle::findOrfail($id);
-            $existingVehicle->user_id = $validated['user_id'];
             $existingVehicle->brand = $validated['brand'];
             $existingVehicle->type = $validated['type'];
             $existingVehicle->model = $validated['model'];

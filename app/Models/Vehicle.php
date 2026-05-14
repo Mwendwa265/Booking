@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Vehicle extends Model
 {
    protected $fillables = [
-    'user_id',
     'brand',
     'type',
     'model',

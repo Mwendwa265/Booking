@@ -14,10 +14,7 @@ class BookingController extends Controller
             'vehicle_id'=>'required|integer' ,
             'start_date'=>'required|date' ,
             'end_date'=>'required|date' ,
-            'total_price'=>'required|decimal' ,
-            
-            
-            
+            'total_price'=>'required|decimal' ,     
         ]);
 
         $booking = new Booking();

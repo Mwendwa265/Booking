@@ -15,7 +15,6 @@ class VehicleSeeder extends Seeder
     {   
             //personal
         Vehicle::create ([
-           'user_id'=> 2,
            'brand'=>'Toyota',
            'type'=>'Saloon',
            'model'=>'Axio',
@@ -24,8 +23,7 @@ class VehicleSeeder extends Seeder
            'availability_status'=> 'available',
         ]);
 
-         Vehicle::create ([
-           'user_id'=> 2,
+         Vehicle::create ([  
            'brand'=>'BMW',
            'type'=>'Convertable',
            'model'=>'4 series',
@@ -35,8 +33,7 @@ class VehicleSeeder extends Seeder
         ]);
            
             //tours
-        Vehicle::create ([
-           'user_id'=> 2,
+        Vehicle::create ([      
            'brand'=>'Toyota',
            'type'=>'Convertable',
            'model'=>'landcruser 4x4',
@@ -45,8 +42,7 @@ class VehicleSeeder extends Seeder
            'availability_status'=> 'available',
         ]);
 
-        Vehicle::create ([
-           'user_id'=> 2,
+        Vehicle::create ([         
            'brand'=>'Toyota',
            'type'=>'Convertable',
            'model'=>'custom',
